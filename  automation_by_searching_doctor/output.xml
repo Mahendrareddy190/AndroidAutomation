@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-01T13:04:54.838634" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Doctor Serarch" source="/Users/perammahendrareddy/Automation/mobileautomation/TatestCases/login_doctor_serarch.robot">
+<test id="s1-t1" name="Open Test Application" line="40">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=12</arg>
+<arg>appActivity=LauncherAlias</arg>
+<arg>automationName=Appium</arg>
+<arg>appPackage=com.practo.fabric</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-07-01T13:04:54.954128" elapsed="10.011148"/>
+</kw>
+<status status="PASS" start="2024-07-01T13:04:54.953552" elapsed="10.011967"/>
+</test>
+<test id="s1-t2" name="Enter Destails to Login" line="42">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T13:05:09.749564" level="INFO">criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help</msg>
+<arg>com.practo.fabric:id/login_help</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T13:05:04.966104" elapsed="4.783581"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T13:05:09.751214" level="INFO">Clicking element 'com.practo.fabric:id/login_help'.</msg>
+<msg time="2024-07-01T13:05:09.872858" level="INFO">criteria is com.practo.fabric:id/login_help</msg>
+<arg>com.practo.fabric:id/login_help</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T13:05:09.749984" elapsed="0.122942"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T13:05:09.874020" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.practo.fabric:id/card_button" and @text="Sign in with email"]'.</msg>
+<msg time="2024-07-01T13:05:10.914748" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.practo.fabric:id/card_button" and @text="Sign in with email"]</msg>
+<arg>//android.widget.Button[@resource-id="com.practo.fabric:id/card_button" and @text="Sign in with email"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T13:05:09.873101" elapsed="1.041799"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-01T13:05:10.916998" level="INFO">Typing text 'mobile.practo+consult1@gmail.com' into text field 'com.practo.fabric:id/email_edit_text'</msg>
+<msg time="2024-07-01T13:05:12.464882" level="INFO">criteria is com.practo.fabric:id/email_edit_text</msg>
+<arg>com.practo.fabric:id/email_edit_text</arg>
+<arg>mobile.practo+consult1@gmail.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T13:05:10.915491" elapsed="1.549464"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-01T13:05:12.466202" level="INFO">Typing text 'practo@321' into text field 'com.practo.fabric:id/password_edit_text'</msg>
+<msg time="2024-07-01T13:05:13.691105" level="INFO">criteria is com.practo.fabric:id/password_edit_text</msg>
+<arg>com.practo.fabric:id/password_edit_text</arg>
+<arg>practo@321</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T13:05:12.465157" elapsed="1.226051"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T13:05:13.692915" level="INFO">Clicking element 'com.practo.fabric:id/continue_button'.</msg>
+<msg time="2024-07-01T13:05:15.386930" level="INFO">criteria is com.practo.fabric:id/continue_button</msg>
+<arg>com.practo.fabric:id/continue_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T13:05:13.691480" elapsed="1.695553"/>
+</kw>
+<status status="PASS" start="2024-07-01T13:05:04.965765" elapsed="10.421549"/>
+</test>
+<status status="PASS" start="2024-07-01T13:04:54.841318" elapsed="20.546639"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Login Doctor Serarch">Login Doctor Serarch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

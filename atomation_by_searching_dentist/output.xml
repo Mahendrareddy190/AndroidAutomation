@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-01T12:51:22.002359" rpa="false" schemaversion="5">
+<suite id="s1" name="OpenApplication" source="/Users/perammahendrareddy/Automation/PractoMobileTest/TestestCases/OpenApplication.robot">
+<test id="s1-t1" name="Open Test Application" line="5">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=12</arg>
+<arg>appActivity=LauncherAlias</arg>
+<arg>automationName=Appium</arg>
+<arg>appPackage=com.practo.fabric</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-07-01T12:51:22.260766" elapsed="8.382379"/>
+</kw>
+<status status="PASS" start="2024-07-01T12:51:22.260093" elapsed="8.383286"/>
+</test>
+<test id="s1-t2" name="Enter Destails to Login" line="8">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:35.409608" level="INFO">criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help
+criteria is com.practo.fabric:id/login_help</msg>
+<arg>com.practo.fabric:id/login_help</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T12:51:30.643952" elapsed="4.765744"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:35.411011" level="INFO">Clicking element 'com.practo.fabric:id/login_help'.</msg>
+<msg time="2024-07-01T12:51:35.512928" level="INFO">criteria is com.practo.fabric:id/login_help</msg>
+<arg>com.practo.fabric:id/login_help</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:35.409899" elapsed="0.103134"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:35.514680" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.practo.fabric:id/card_button" and @text="Sign in with email"]'.</msg>
+<msg time="2024-07-01T12:51:36.691622" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.practo.fabric:id/card_button" and @text="Sign in with email"]</msg>
+<arg>//android.widget.Button[@resource-id="com.practo.fabric:id/card_button" and @text="Sign in with email"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:35.513304" elapsed="1.178422"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:36.693447" level="INFO">Typing text 'mobile.practo+consult1@gmail.com' into text field 'com.practo.fabric:id/email_edit_text'</msg>
+<msg time="2024-07-01T12:51:38.258125" level="INFO">criteria is com.practo.fabric:id/email_edit_text</msg>
+<arg>com.practo.fabric:id/email_edit_text</arg>
+<arg>mobile.practo+consult1@gmail.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:36.692001" elapsed="1.566228"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:38.259880" level="INFO">Typing text 'practo@321' into text field 'com.practo.fabric:id/password_edit_text'</msg>
+<msg time="2024-07-01T12:51:39.537721" level="INFO">criteria is com.practo.fabric:id/password_edit_text</msg>
+<arg>com.practo.fabric:id/password_edit_text</arg>
+<arg>practo@321</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:38.258519" elapsed="1.279305"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:39.539541" level="INFO">Clicking element 'com.practo.fabric:id/continue_button'.</msg>
+<msg time="2024-07-01T12:51:40.877502" level="INFO">criteria is com.practo.fabric:id/continue_button</msg>
+<arg>com.practo.fabric:id/continue_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:39.538102" elapsed="1.339504"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-01T12:51:45.878455" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-01T12:51:40.877871" elapsed="5.000772"/>
+</kw>
+<status status="PASS" start="2024-07-01T12:51:30.643617" elapsed="15.235450"/>
+</test>
+<test id="s1-t3" name="Enable location" line="16">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:48.185407" level="INFO">criteria is com.practo.fabric:id/button_enable_location</msg>
+<arg>com.practo.fabric:id/button_enable_location</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T12:51:45.879974" elapsed="2.305533"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:48.187306" level="INFO">Clicking element 'com.practo.fabric:id/button_enable_location'.</msg>
+<msg time="2024-07-01T12:51:48.869681" level="INFO">criteria is com.practo.fabric:id/button_enable_location</msg>
+<arg>com.practo.fabric:id/button_enable_location</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:48.185782" elapsed="0.683966"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:49.378016" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_foreground_only_button</msg>
+<arg>com.android.permissioncontroller:id/permission_allow_foreground_only_button</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T12:51:48.869923" elapsed="0.508194"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:49.379802" level="INFO">Clicking element 'com.android.permissioncontroller:id/permission_allow_foreground_only_button'.</msg>
+<msg time="2024-07-01T12:51:49.947225" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_foreground_only_button</msg>
+<arg>com.android.permissioncontroller:id/permission_allow_foreground_only_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:49.378387" elapsed="0.568943"/>
+</kw>
+<status status="PASS" start="2024-07-01T12:51:45.879537" elapsed="4.068057"/>
+</test>
+<test id="s1-t4" name="search dentist" line="21">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:52.762109" level="INFO">criteria is com.practo.fabric:id/search_bar_image
+criteria is com.practo.fabric:id/search_bar_image</msg>
+<arg>com.practo.fabric:id/search_bar_image</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-01T12:51:49.948425" elapsed="2.813787"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:52.763893" level="INFO">Clicking element 'com.practo.fabric:id/search_bar_image'.</msg>
+<msg time="2024-07-01T12:51:53.200561" level="INFO">criteria is com.practo.fabric:id/search_bar_image</msg>
+<arg>com.practo.fabric:id/search_bar_image</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:52.762482" elapsed="0.438179"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:55.294356" level="INFO">criteria is com.practo.fabric:id/search_bar
+criteria is com.practo.fabric:id/search_bar</msg>
+<arg>com.practo.fabric:id/search_bar</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T12:51:53.201169" elapsed="2.093294"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:55.296314" level="INFO">Typing text 'Dentist' into text field 'com.practo.fabric:id/search_bar'</msg>
+<msg time="2024-07-01T12:51:56.847610" level="INFO">criteria is com.practo.fabric:id/search_bar</msg>
+<arg>com.practo.fabric:id/search_bar</arg>
+<arg>Dentist</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:55.294748" elapsed="1.552947"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:51:56.849185" level="INFO">Clicking element '//androidx.recyclerview.widget.RecyclerView[@resource-id="com.practo.fabric:id/recycler_view_list"]/android.view.ViewGroup[1]/android.widget.LinearLayout/android.widget.LinearLayout'.</msg>
+<msg time="2024-07-01T12:51:59.111219" level="INFO">xpath criteria: //androidx.recyclerview.widget.RecyclerView[@resource-id="com.practo.fabric:id/recycler_view_list"]/android.view.ViewGroup[1]/android.widget.LinearLayout/android.widget.LinearLayout</msg>
+<arg>//androidx.recyclerview.widget.RecyclerView[@resource-id="com.practo.fabric:id/recycler_view_list"]/android.view.ViewGroup[1]/android.widget.LinearLayout/android.widget.LinearLayout</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:51:56.847930" elapsed="2.263392"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:52:00.433324" level="INFO">xpath criteria: //android.view.View[@content-desc="Book In-clinic Appointment. Book an appointment with a top dentist"]
+xpath criteria: //android.view.View[@content-desc="Book In-clinic Appointment. Book an appointment with a top dentist"]</msg>
+<arg>//android.view.View[@content-desc="Book In-clinic Appointment. Book an appointment with a top dentist"]</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T12:51:59.111596" elapsed="1.321835"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:52:00.435180" level="INFO">Clicking element '//android.view.View[@content-desc="Book In-clinic Appointment. Book an appointment with a top dentist"]'.</msg>
+<msg time="2024-07-01T12:52:01.300190" level="INFO">xpath criteria: //android.view.View[@content-desc="Book In-clinic Appointment. Book an appointment with a top dentist"]</msg>
+<arg>//android.view.View[@content-desc="Book In-clinic Appointment. Book an appointment with a top dentist"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:52:00.433705" elapsed="0.866552"/>
+</kw>
+<status status="PASS" start="2024-07-01T12:51:49.947903" elapsed="11.352522"/>
+</test>
+<test id="s1-t5" name="open doctor profile" line="29">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:52:04.882993" level="INFO">criteria is com.practo.fabric:id/layout_item_listing_doctor_card_info
+criteria is com.practo.fabric:id/layout_item_listing_doctor_card_info
+criteria is com.practo.fabric:id/layout_item_listing_doctor_card_info
+criteria is com.practo.fabric:id/layout_item_listing_doctor_card_info
+criteria is com.practo.fabric:id/layout_item_listing_doctor_card_info</msg>
+<arg>com.practo.fabric:id/layout_item_listing_doctor_card_info</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T12:52:01.300892" elapsed="3.582189"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:52:04.884561" level="INFO">Clicking element 'com.practo.fabric:id/layout_item_listing_doctor_card_info'.</msg>
+<msg time="2024-07-01T12:52:06.787507" level="INFO">criteria is com.practo.fabric:id/layout_item_listing_doctor_card_info</msg>
+<arg>com.practo.fabric:id/layout_item_listing_doctor_card_info</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:52:04.883311" elapsed="1.904349"/>
+</kw>
+<status status="PASS" start="2024-07-01T12:52:01.300613" elapsed="5.487330"/>
+</test>
+<test id="s1-t6" name="bookAppointment" line="32">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:52:14.584162" level="INFO">xpath criteria: //android.widget.Button[@text="Book Clinic Visit"]
+xpath criteria: //android.widget.Button[@text="Book Clinic Visit"]
+xpath criteria: //android.widget.Button[@text="Book Clinic Visit"]</msg>
+<arg>//android.widget.Button[@text="Book Clinic Visit"]</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T12:52:06.788566" elapsed="7.795698"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:52:14.585987" level="INFO">Clicking element '//android.widget.Button[@text="Book Clinic Visit"]'.</msg>
+<msg time="2024-07-01T12:52:15.986003" level="INFO">xpath criteria: //android.widget.Button[@text="Book Clinic Visit"]</msg>
+<arg>//android.widget.Button[@text="Book Clinic Visit"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:52:14.584537" elapsed="1.401591"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:52:18.335040" level="INFO">criteria is com.practo.fabric:id/slot_info
+criteria is com.practo.fabric:id/slot_info</msg>
+<arg>com.practo.fabric:id/slot_info</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-07-01T12:52:15.986350" elapsed="2.348775"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-01T12:52:18.336563" level="INFO">Clicking element 'com.practo.fabric:id/slot_info'.</msg>
+<msg time="2024-07-01T12:52:18.888821" level="INFO">criteria is com.practo.fabric:id/slot_info</msg>
+<arg>com.practo.fabric:id/slot_info</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-01T12:52:18.335350" elapsed="0.553577"/>
+</kw>
+<status status="PASS" start="2024-07-01T12:52:06.788214" elapsed="12.100981"/>
+</test>
+<status status="PASS" start="2024-07-01T12:51:22.003931" elapsed="56.885891"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="OpenApplication">OpenApplication</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
